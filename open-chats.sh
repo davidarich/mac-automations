@@ -11,7 +11,7 @@ if [ "$SSID" == "wireless.expedient.com" ]; then
 
   if [ $LYNC_PROCESS_COUNT -eq 0 ]; then
     # Run Lync detached from shell
-    nohup "/Applications/Microsoft Lync.app/Contents/MacOS/Microsoft Lync" &
+    nohup "/Applications/Microsoft Lync.app/Contents/MacOS/Microsoft Lync" > /dev/null 2>&1 &
   fi
 
   # Make sure teams isn't already running
@@ -20,7 +20,7 @@ if [ "$SSID" == "wireless.expedient.com" ]; then
   if [ $TEAMS_PROCESS_COUNT -eq 0 ]; then
 
     # Run Microsoft Teams detached from shell
-    nohup "/Applications/Microsoft Teams.app/Contents/MacOS/Teams" &
+    nohup "/Applications/Microsoft Teams.app/Contents/MacOS/Teams" > /dev/null 2>&1 &
   fi
 
 fi
