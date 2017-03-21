@@ -10,6 +10,11 @@ alias lll='ls -altGFh'
 LS_COLORS="GxFxCxDxBxegedabagaced"
 export LS_COLORS
 
+# Always use color mode for grep
+alias grep='grep --color'
+alias egrep='egrep --color'
+alias fgrep='fgrep --color'
+
 
 ### Symfony development ###
 
