@@ -15,6 +15,9 @@ alias grep='grep --color'
 alias egrep='egrep --color'
 alias fgrep='fgrep --color'
 
+# Alias to updatedb
+alias updatedb='sudo /usr/libexec/locate.updatedb'
+
 
 ### Symfony development ###
 
