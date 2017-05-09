@@ -19,6 +19,10 @@ alias fgrep='fgrep --color'
 alias updatedb='sudo /usr/libexec/locate.updatedb'
 
 
+# Make a tarball
+alias targz='tar -cvzf'
+alias untargz='tar -xvzf'
+
 ### Symfony development ###
 
 # start symfony server (sss): starts running symfony project from the base directory utilizing PHP's built in webserver
